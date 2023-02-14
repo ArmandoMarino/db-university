@@ -31,7 +31,9 @@ AND `date` = '2020-06-20'
 ORDER BY `exams`.`hour`  ASC
 
 -- 6. Selezionare tutti i corsi di laurea magistrale (38)
-
+SELECT `name` AS 'Corso di Laurea'
+FROM `degrees`
+WHERE `name` LIKE '%magistrale%';
 
 -- 7. Da quanti dipartimenti è composta l'università? (12)
 
