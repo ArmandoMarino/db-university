@@ -25,7 +25,7 @@ AND `teachers`.`surname` = 'Amato';
 -- 4. Selezionare tutti gli studenti con i dati relativi al corso di laurea a cui sono iscritti e il
 -- relativo dipartimento, in ordine alfabetico per cognome e nome
 SELECT `students`. `name`AS 'Nome', `students`.`surname` AS 'Cognome',
-`students`.`enrolment_date` AS 'Data d\'iscrizione' , 
+`students`.`enrolment_date` AS "Data d\'iscrizione" , 
 `degrees`.`name` AS 'Corso di Laurea'
 FROM `students`
 JOIN `degrees`
